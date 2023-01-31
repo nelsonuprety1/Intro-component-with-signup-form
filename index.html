@@ -8,43 +8,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/styles/style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 <body>
+  <section class="container">
+    <header>
+      <h1>Learn to code by watching others</h1>
+    </header>
 
-  Learn to code by watching others
+    <article class="first-para">
+      <p class="main-paragraph"> See how experienced developers solve <span class="second-line">problems in real-time.
+          Watching</span>
+        <span class="third-line">scripted tutorials is great, but</span> understanding how developers think is
+        <span class="invaluable">invaluable.</span></p>
+    </article>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-  but understanding how developers think is invaluable.
+    <section class="try-box">
+      <p><span class="try">Try it free 7 days</span> then <br /> $20/mo. thereafter</p>
+    </section>
 
-  Try it free 7 days then $20/mo. thereafter
+    <form class="claim-form" action="/">
+      <input type="text" placeholder="First Name" id="first-name">
+      <img class='error-img' src="/images/icon-error.svg" alt="error">
+      <div class="err err-first">First Name cannot be empty</div>
 
-  First Name
-  Last Name
-  Email Address
-  Password
+      <input type="text" placeholder="Last Name" id="last-name">
+      <img class='error-img' src="/images/icon-error.svg" alt="error">
+      <div class="err err-last">Last Name cannot be empty</div>
 
-  Claim your free trial
+      <input type="email" placeholder="Email Address" id="email">
+      <img class='error-img' src="/images/icon-error.svg" alt="error">
+      <div class="err err-email">Looks like this is not an email</div>
 
-  By clicking the button, you are agreeing to our Terms and Services
+      <input type="password" placeholder="Password" id="password">
+      <img class='error-img' src="/images/icon-error.svg" alt="error">
+      <div class="err err-pass">Password cannot be empty</div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Nelson Uprety</a>.
-    </p>
-  </footer>
+      <button class="claim-btn">CLAIM YOUR FREE TRIAL</button>
+      <p class="agree">By clicking the button, you are agreeing to our <span class="terms">Terms and
+          Services</span></p>
+    </form>
+  </section>
 </body>
 <script src="script.js"></script>
 </html>
