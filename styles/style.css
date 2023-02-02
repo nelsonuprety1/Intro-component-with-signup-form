@@ -22,9 +22,18 @@ body {
 
 .container {
     max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-top: 70px;
 }
@@ -72,6 +81,7 @@ header h1 {
     padding: 15px;
     font-size: 0.8em;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
     box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
 }
 
@@ -88,6 +98,7 @@ header h1 {
     background-color: var(--color-white);
     height: 420px;
     border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
     box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
     margin-bottom: 30px;
 }
@@ -141,6 +152,7 @@ header h1 {
     background-color: var(--color-green);
     font-size: 0.8em;
     font-weight: var(--font-weight-four);
+    -webkit-box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
     box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
     cursor: pointer;
 }
@@ -169,7 +181,12 @@ header h1 {
     }
 
     .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         max-width: 1440px;
         position: relative;
@@ -247,18 +264,17 @@ header h1 {
     }
 
     .error-img {
-        visibility: visible;
         position: relative;
         bottom: 38px;
         left: 370px;
-
+        visibility: hidden;
     }
 
     .err {
-        visibility: visible;
         margin-left: 297px;
         font-size: 0.5em;
         /* margin-top: 1px; */
+        visibility: hidden;
     }
 
     .claim-btn {
