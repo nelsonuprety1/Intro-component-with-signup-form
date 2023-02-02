@@ -83,7 +83,6 @@ header h1 {
     font-weight: var(--font-weight-six);
 }
 
-
 .claim-form {
     width: 270px;
     background-color: var(--color-white);
@@ -91,7 +90,6 @@ header h1 {
     border-radius: 10px;
     box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.29);
     margin-bottom: 30px;
-
 }
 
 #first-name,
@@ -101,6 +99,14 @@ header h1 {
     width: 240px;
     padding: 7px;
     margin: 13px 0 -20px 15px;
+    color: var(--color-dark-blue);
+    /* opacity for firefox */
+    opacity: 90%;
+    font-size: 0.7em;
+    font-weight: var(--font-weight-six);
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
 .error-img {
@@ -121,15 +127,8 @@ header h1 {
     margin-top: -7px;
 }
 
-#first-name,
-#last-name,
-#email,
-#password {
-    color: var(--color-dark-blue);
-    /* opacity for firefox */
-    opacity: 90%;
-    font-size: 0.7em;
-    font-weight: var(--font-weight-six);
+.helper {
+    margin-top: 15px;
 }
 
 .claim-btn {
@@ -161,4 +160,118 @@ header h1 {
     font-weight: var(--font-weight-six);
     margin-left: 65px;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    body {
+        background: url('/images/bg-intro-desktop.png') var(--color-red);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 1440px;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+        width: 35rem;
+        margin-right: 200px;
+        line-height: 1.2;
+        font-weight: var(--font-weight-seven);
+        position: absolute;
+        top: 10rem;
+        left: 3rem;
+    }
+
+    .first-para {
+        max-width: 27rem;
+        position: absolute;
+        right: 54rem;
+        top: 21rem;
+    }
+
+    .second-line {
+        margin-left: 0;
+    }
+
+    .third-line {
+        margin-left: 0;
+    }
+
+    .invaluable {
+        margin-left: 0;
+    }
+
+    .try-box {
+        position: absolute;
+        top: 2rem;
+        width: 450px;
+        right: 23rem;
+        font-size: 0.9em;
+    }
+
+    .try-box p {
+        margin-top: 5px;
+        white-space: nowrap;
+    }
+
+    .try-box br {
+        display: none;
+    }
+
+    .claim-form {
+        position: absolute;
+        width: 450px;
+        height: 500px;
+        top: 7rem;
+        right: 23rem;
+    }
+
+    #first-name,
+    #last-name,
+    #email,
+    #password {
+        width: 390px;
+        padding: 12px;
+        margin-left: 25px;
+        margin-top: 17px;
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+
+    .helper {
+        margin-top: 17px;
+    }
+
+    .error-img {
+        visibility: visible;
+        position: relative;
+        bottom: 38px;
+        left: 370px;
+
+    }
+
+    .err {
+        visibility: visible;
+        margin-left: 297px;
+        font-size: 0.5em;
+        /* margin-top: 1px; */
+    }
+
+    .claim-btn {
+        width: 390px;
+        margin-left: 25px;
+        padding: 15px;
+    }
+
+    .agree {
+        margin-left: 70px;
+    }
+
+    .terms {
+        margin-left: 0;
+    }
 }
